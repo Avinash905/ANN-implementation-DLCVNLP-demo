@@ -13,9 +13,10 @@ def create_model(LOSS_FUNCTION,OPTIMIZER,METRICS,NUM_CLASSES):
 
     model_clf.summary()
 
-    LOSS_FUNCTION='sparse_categorical_crossentropy' # tf.losses.sparce_categorical_crossentropy
-    OPTIMIZER='SGD' # tf.keras.optimizers.SGD(0.02)
-    METRICS=['accuracy']
+    # LOSS_FUNCTION='sparse_categorical_crossentropy' # tf.losses.sparce_categorical_crossentropy
+    # OPTIMIZER='SGD' # tf.keras.optimizers.SGD(0.02)
+    # METRICS=['accuracy']
+    
     model_clf.compile(loss=LOSS_FUNCTION,optimizer=OPTIMIZER,metrics=METRICS)
 
     return model_clf  ## <<< untrained model
